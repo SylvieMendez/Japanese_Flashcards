@@ -5,19 +5,19 @@ import Cards from './Cards.jsx';
 const App = () => {
   const [idx, setIdx] = useState(0);
   
-  const next = () => setIdx(i => (i + 1) % Cards.length);
+  const next = () => setIdx(i => (i + 1) % cardData.length);
 
   const cardData = [
-    {id: 1, question: 'Hello', answer: 'Konnichiwa'},
-    {id: 2, question: 'Goodbye', answer: 'Sayonara'},
-    {id: 3, question: 'Thank you', answer: 'Arigatou'},
-    {id: 4, question: 'Yes', answer: 'Hai'},
-    {id: 5, question: 'No', answer: 'Iie'},
-    {id: 6, question: 'Please', answer: 'Kudasai'},
-    {id: 7, question: 'Excuse me / I\'m sorry', answer: 'Sumimasen'},
-    {id: 8, question: 'Good morning', answer: 'Ohayou gozaimasu'},
-    {id: 9, question: 'Good night', answer: 'Oyasuminasai'},
-    {id: 10, question: 'How are you?', answer: 'Ogenki desu ka?'}
+    {question: 'Hello', answer: 'Konnichiwa'},
+    {question: 'Goodbye', answer: 'Sayonara'},
+    {question: 'Thank you', answer: 'Arigatou'},
+    {question: 'Yes', answer: 'Hai'},
+    {question: 'No', answer: 'Iie'},
+    {question: 'Please', answer: 'Kudasai'},
+    {question: 'Excuse me / I\'m sorry', answer: 'Sumimasen'},
+    {question: 'Good morning', answer: 'Ohayou gozaimasu'},
+    {question: 'Good night', answer: 'Oyasuminasai'},
+    {question: 'How are you?', answer: 'Ogenki desu ka?'}
   ];
 
   return (
