@@ -3,8 +3,9 @@ import './App.css';
 import Cards from './Cards.jsx';
 
 const App = () => {
-  const [click, whenClicked] = useState(0);
-  const updateClick = () => whenClicked(click);
+  const [idx, setIdx] = useState(0);
+  
+  const next = () => setIdx(i => (i + 1) % Cards.length);
 
   const cardData = [
     {id: 1, question: 'Hello', answer: 'Konnichiwa'},
@@ -26,12 +27,14 @@ const App = () => {
         <h2>Want to know how to speak simple Japanese? Lets learn!</h2>
         <p>Number of cards: {cardData.length}</p>
       </div>
-      <div className="cards" onClick={updateClick}>
+      <div className="cards">
         <Cards 
-          key={cardData.id}
-          question={cardData.question}
-          answer={cardData.answer}
+          question={cardData[idx].question}
+          answer={cardData[idx].answer}
         />
+      </div>
+      <div className="Control">
+        <button onClick={next}>Next</button>
       </div>
     </div>
   )

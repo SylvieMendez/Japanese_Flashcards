@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+.cardTemplate {
+  outline: black;
+  color: purple;
+
+}
+.card {
+  color: white;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
