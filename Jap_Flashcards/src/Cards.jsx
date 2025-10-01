@@ -1,8 +1,14 @@
+import { useState } from 'react';
+
 const Cards = ( {question, answer} ) => {
+
+  const [flipped, setFlipped] = useState(false);
+
+  const handleClick = () => setFlipped(f => !f);
+
   return(
-    <div className="cardTemplate">
-      <div className="question">{question}</div>
-      <div className="answer">{answer}</div>
+    <div className="cardTemplate" onClick={handleClick}>
+      <div className="question">{flipped ? answer: question}</div>
     </div>
   )
 }
