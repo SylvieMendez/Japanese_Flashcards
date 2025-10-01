@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Cards from './Cards.jsx';
 
 const App = () => {
   const [click, whenClicked] = useState(0);
@@ -13,7 +14,7 @@ const App = () => {
         <p>Number of cards: 10</p>
       </div>
       <div className="cards" onClick={updateClick}>
-
+        <Cards />
       </div>
 
     </div>
