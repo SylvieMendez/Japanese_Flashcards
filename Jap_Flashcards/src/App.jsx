@@ -14,7 +14,46 @@ const App = () => {
         <p>Number of cards: 10</p>
       </div>
       <div className="cards" onClick={updateClick}>
-        <Cards />
+        <Cards 
+          question="Hello"
+          answer="Konnichiwa"
+        />
+        <Cards 
+          question="Goodbye"
+          answer="Sayonara"
+        />
+        <Cards 
+          question="Thank you"
+          answer="Arigatou"
+        />
+        <Cards 
+          question="Yes"
+          answer="Hai"
+        />
+        <Cards 
+          question="No"
+          answer="Iie"
+        />
+        <Cards 
+          question="Please"
+          answer="Onegaishimasu"
+        />
+        <Cards 
+          question="Excuse me / I'm sorry"
+          answer="Sumimasen"
+        />
+        <Cards 
+          question="Good morning"
+          answer="Ohayou gozaimasu"
+        />
+        <Cards 
+          question="Good night"
+          answer="Oyasuminasai"
+        />
+        <Cards 
+          question="Good afternoon"
+          answer="Kunbanwa"
+        />
       </div>
 
     </div>
