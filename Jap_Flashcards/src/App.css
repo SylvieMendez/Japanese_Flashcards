@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+.feedback { 
+  min-height: 1.25rem;
+}
+
+.feedback.correct { color: green; }
+.feedback.incorrect { color: crimson;}
+
 .cards{
   display:flex; justify-content:center; align-items:center;
   margin:34px 0 16px;

@@ -1,8 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-const Cards = ( {question, answer} ) => {
+const Cards = ( {question, answer, idx} ) => {
 
   const [flipped, setFlipped] = useState(false);
+
+  useEffect(() => {
+    setFlipped(false);
+  }, [idx]);
 
   const handleClick = () => setFlipped(f => !f);
 
